@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Unicell</title>
+  <link rel="icon" type="image/x-icon" href="D:\FirstWebsite\logo4.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+  	.navbar-inverse .navbar-nav>li>a {
+    	color: white;
+    	font-size: larger;
+	 }
+
+  /* .navbar-header>img {
+    vertical-align: middle;
+    height: 50px;
+    width: 75px;
+   }*/
+   .navbar-inverse .navbar-nav>li>a {
+    color: white;
+    font-size: 15px;
+    margin-top: 11px;
+}
+
+   * {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.container{
+  border: solid black 2px;
+  margin: 10px;
+  margin-left: 50px;
+}
+
+img {
+      vertical-align: middle;
+      border: solid black 2px;
+      height: 250px;
+      width: 350px;
+      margin: 10px;
+      float: left;
+  }
+    
+    .footer {
+       margin: 10px;
+       padding: 2px;
+       width: 100%;
+       background-color: mediumpurple;
+       color: white;
+       text-align: center;
+    }
+
+  .fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+    
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img src="D:\FirstWebsite\logo4.jpg" style="height: 50px; width: 75px; vertical-align: middle;" >
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a class="nav-link" href="home.html">Home</a></li>
+      <li><a class="nav-link" href="aboutus.html">About Us</a></li>
+      <li class="active"><a class="nav-link" href="services.html">Services</a></li>
+      <li><a class="nav-link" href="image_gallery.html">Gallery</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+    <!-- <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form> -->
+  </div>
+</nav>
+
+
+<div class="header">
+  <h1>TOP 5 UNIVERSITIES</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul style="text-align: center;">
+      <li>Indian Institute of Science (IISc), Bangalore</li><br>
+      <li>Jawaharlal Nehru University (JNU), New Delhi</li><br>
+      <li>Banaras Hindu University (BHU), Varanasi</li><br>
+      <li>Calcutta University, Kolkata</li><br>
+      <li>Amrita Vishwa Vidyapeetham, Coimbatore</li><br>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9"><br><br>
+    <h1>The Universities</h1>
+    <p style="font-size: 20px;">IISc Bangalore has bagged the first position in NIRF Rankings 2021 released for top universities in India. Other universities following IISc Bangalore in NIRF Ranking are Jawaharlal Nehru University at Rank 2, Banaras Hindu University at Rank 3, Calcutta University at Rank 4, and Amrita Vishwa Vidyapeetham, Coimbatore University at Rank 5.  </p>
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h4>Who Ranks These Universities?</h4>
+      <p>National Institute Ranking Framework(NIRF)</p><hr>
+      <h4>How?</h4>
+      <p>NIRF ranks universities each year on the basis of few parameters. Each parameter has a certain weightage and universities are evaluated out of a total score of 500.</p><hr>
+      <h4>Parameters:</h4>
+      <ul>
+        <li>Teaching, Learning and Resources (TLR)</li>
+        <li>Research and Professional Practice (RP)</li>
+        <li>Outreach and Inclusivity (OI)</li>
+        <li>Graduation Outcome (GO)</li>
+        <li>Perception (PR)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="fullcont">
+<div class="container">
+<h3><a href="https://iisc.ac.in/">Indian Institute of Science (IISc), Bangalore</a></h3>
+<p style="font-size: 15px;"><img src="D:\FirstWebsite\iisc.jpg" alt="Pineapple" style="width:200px;height:250px;margin-right:15px;">
+One of the best institutes for advanced scientific and technological research and education in India, IISc Bangalore has topped the NIRF Ranking 2021 with a whopping total score of 82.67. Divisions under which the institute offers various Science courses to students include Division of Biological Sciences, Division of Chemical Sciences, Division of Physical & Mathematical Sciences, Division of Electrical Sciences, Division of Mechanical Sciences, and Division of Interdisciplinary Research.
+IISc Bangalore is known for the research courses and has been ranked at 155th position in QS world rankings. Most Popular course is Bachelor of Science (Research). Admission will be based on JEE advanced, JEE Main NEET and KVPY scores. Institute conducts its own counselling. Institute also offers M.Tech, M.Sc (Research), M.Des and MMS at the PG level.<br>
+
+Currently, the institute has 6 academic divisions and 45 academic departments. Apart from that, the college has around 13 departments under the director and 6 autonomous societies/centers. IISc Bangalore has an active placement cell that annually conducts recruitment drives for eligible meritorious students. During IISc Bangalore Placements 2022, the highest salary stood at INR 60 LPA. Students received a median salary of INR 23 LPA and for PG programmes, it ranged from INR 20 LPA to INR 21.69 LPA. Further, the highest stipend offered during IISc Bangalore internships 2021-22 was INR 1.15 lakh per month. Some of the top recruiters include Oracle, Toshiba, HSBC, Cisco, Dell etc.</p>
+</div>
+
+<div class="container">
+<h3><a href="https://www.jnu.ac.in/main/">Jawaharlal Nehru University (JNU), New Delhi</a></h3>
+<p style="font-size: 15px;"><img src="D:\FirstWebsite\jnu.jpg" alt="Pineapple" style="width:200px;height:250px;margin-right:15px;">
+One of the leading universities in India, JNU is a popular choice among students for pursuing Humanities courses. 
+Different schools under which the varsity offers undergraduate and postgraduate courses to students are School of Arts & Aesthetics; School of Biotechnology; School of Computational and Integrative Sciences; School of Computer and Systems Sciences; School of Engineering; School of Environmental Sciences; School of International Studies; School of Language, Literature and Culture Studies; School of Life Sciences; Atal Bihari Vajpayee School of Management and Entrepreneurship; School of Physical Sciences; School of Sanskrit and Indic Studies; and School of Social Sciences.
+Jawaharlal Nehru University (JNU) is one of India’s top-ranked universities for postgraduate and research studies. It has been given the status of ‘University of Excellence' by the UGC and accredited with an ‘A’ grade by the NAAC. JNU is ranked 2nd among top universities in India by NIRF 2022. JNU has granted recognition and accreditation to more than 18 Defence and Research & Development institutions. It has 13 schools, 55 centres, and seven special centres.<br>
+
+At present, JNU is offering over 100 courses at the UG, PG, and Doctoral levels. The courses are offered in the fields of Arts, Science, Computer Applications, Medical, Engineering, Law, Mass Communication, and Management. Additionally, JNU offers Diploma, Advanced Diploma, and Certificate courses in various languages. Admission to the UG and PG courses will be done through Common University Entrance Test (CUET) conducted by NTA.</p>
+</div>
+
+<div class="container">
+<h3><a href="https://www.bhu.ac.in/">Banaras Hindu University (BHU), Varanasi</a></h3>
+<p style="font-size: 15px;"><img src="D:\FirstWebsite\bhu.jpg" alt="Pineapple" style="width:200px;height:250px;margin-right:15px;">
+An internationally recognised university, BHU offers UG, PG, and Research, and Diploma courses in multiple disciplines including Humanities, Social Science, Technology, Medicine, Science, Fine Arts, and many more. Admissions into these courses are based on the entrance examination conducted by the university. BHU admissions to UG and PG courses will be done through Common University Entrance Test (CUET) conducted by NTA. BHU conducts Research Entrance Test (RET) to for admission to the PhD programs. The university has six centers of advanced studies, 10 departments under the Special Assistance Programme and a large number of specialised research centers. The university claims the title of largest residential university in Asia. BHU has over 65 hostels with accommodation for over 12,000 students. BHU has around 1700 teachers and nearly 8000 non-teaching staff in its main campus and affiliated colleges. The main campus of this central university is spread over an area of 1,300 acres. BHU stood at 3rd position with a score of 64.02.<br>
+
+BHU has signed MoUs with over 40 national and international universities for the students and faculty exchange programs. Since the university has collaborated with many international universities, a lot of students from across the world come to study at BHU every year. <br>
+
+BHU provides impressive placement and internship opportunities to all its students. The highest salary package has touched the INR 1.5 CPA mark. Some of the top recruiters of BHU include DHL, Infosys, Amazon, ICICI Bank, Adani, Wipro, and many more.
+</p>
+</div>
+
+<div class="container">
+<h3><a href="https://www.caluniv.ac.in/">Calcutta University, Kolkata</a></h3>
+<p style="font-size: 15px;"><img src="D:\FirstWebsite\cal.jpg" alt="Pineapple" style="width:200px;height:250px;margin-right:15px;">
+Founded in 1854, Calcutta University is one of the oldest universities in India. Calcutta University is a collegiate public state research University In the capital city Kolkata of West Bengal. Calcutta University is the first multidisciplinary and western-style institution in Asia. At present, there are 151 colleges and 21 institutes affiliated with Calcutta University. The University has given the highest number of students who have cleared the national eligibility test. The University has achieved the title of ‘5-star University’ and accredited Grade ‘A’ by NAAC. Kolkata University has also earned the status of centre with potential for excellence in a particular area by University Grants Commission (UGC).
+The varsity offers various undergraduate and postgraduate programmes to students under faculties/ institutes such as Institute of Agricultural Science; Faculty Council for Post-Graduate studies in Arts; Faculty Council for Post-Graduate studies in Commerce, Social Welfare & Business Management; Faculty Council for Post-Graduate studies in Education, Journalism & Library Science; Faculty Council for Post-Graduate studies in Engineering & Technology; Faculty Council for Post-Graduate studies in Fine Arts, Music and Home Science; Faculty Council for Post-Graduate studies in Law, and Faculty Council for Post-Graduate studies in Science. Calcutta University stood at NIRF rank 4 with a score of 62.06.<br>
+
+Calcutta University has given 5 Nobel laureates from India Such as Rabindranath Tagore, CV Raman, Amartya Sen Abhijit Vinayak Banerjee.
+</p>
+</div>
+
+<div class="container">
+<h3><a href="https://www.amrita.edu/">Amrita Vishwa Vidyapeetham, Coimbatore</a></h3>
+<p style="font-size: 15px;"><img src="D:\FirstWebsite\amrita.jpg" alt="Pineapple" style="width:200px;height:250px;margin-right:15px;">
+Multi-campus, multi-disciplinary research academia, Amrita Vishwa Vidyapeetham is known to be one of the best research institutions in India. The university is spread across six campuses in three states of India – Kerala, Tamil Nadu and Karnataka. Various schools/ departments under which the varsity offers different courses to students are Centre for Allied Health Sciences, School of Arts & Science, School of Ayurveda, School of Biotechnology, School of Business, Department of Communication, School of Dentistry, School of Education, School of Engineering, Medicine, Centre for Nanosciences, College of Nursing, School of Pharmacy, and Department of Social Work.<br>
+BTech, MTech, and MBA are the three most popular courses at Amrita Vishwa Vidyapeetham. Candidates seeking admission to the BTech program must appear for the JEE Main or AEEE entrance exam. Admissions to the MTech program are offered on the basis of GATE/PGCET/ TANCET/PGECET scores. MBA admissions are based on the CAT/XAT/MAT/CMAT/GMAT/ GRE scores.<br>
+Amrita Vishwa Vidyapeetham offers impressive placement opportunities to its students. Every year more than 90% of its students are placed in top-notch companies. The highest package offered at AVV is INR 43.30 LPA, while the average package stood at INR 5.40 LPA. Some of the major recruiters are Amazon, Wipro, Dell, Samsung, Tech Mahindra, TCS, INFOSYS, ADANI, and many more.
+Amrita Vishwa Vidyapeetham secured rank 5 with a score of 61.23.</p>
+</div>
+
+<div class="footer">
+  <address>
+    Written by <a href="abhiy.dhamdhere@gmail.com" style="color: white;">Abhishek Dhamdhere</a><br> 
+    Visit us at :
+    Example.com<br>
+    Mobile Number : 
+    +91 8805950492<br>
+    Shivajinagar, Pune<br>
+    INDIA
+</address>
+
+<a href="#" class="fa fa-facebook"></a>
+ <a href="#" class="fa fa-linkedin"></a>
+ <a href="#" class="fa fa-instagram"></a>
+ <a href="#" class="fa fa-youtube"></a>
+</div>
+
+</body>
+</html>
+
+

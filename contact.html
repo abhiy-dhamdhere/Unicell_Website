@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Unicell</title>
+  <link rel="icon" type="image/x-icon" href="D:\FirstWebsite\logo4.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+  /*	.navbar-inverse .navbar-nav>li>a {
+    	color: white;
+    	font-size: larger;
+	 }*/
+    .navbar-inverse .navbar-nav>li>a {
+    color: white;
+    font-size: 15px;
+    margin-top: 11px;
+}
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+/*.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    z-index: 2;
+    margin-left: -1px;
+    margin-bottom: -6px;
+}*/
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: lightyellow;
+      padding: 20px;
+    }
+
+    .container-fluid {
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+    label{
+      color: darkred;
+    }
+
+    img {
+    vertical-align: middle;
+    height: 50px;
+    width: 75px;
+}
+
+    .footer {
+       margin: 10px;
+       padding: 2px;
+       width: 100%;
+       background-color: mediumpurple;
+       color: white;
+       text-align: center;
+    }
+
+  .fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+    
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+            <img src="D:\FirstWebsite\logo4.jpg" style="height: 45px; width: 70px; vertical-align: middle; margin-top: 8px; margin-left: 10px;" >
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a class="nav-link" href="home.html">Home</a></li>
+      <li><a class="nav-link" href="aboutus.html">About Us</a></li>
+      <li><a class="nav-link" href="services.html">Services</a></li>
+      <li><a class="nav-link" href="image_gallery.html">Gallery</a></li>
+      <li class="active"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+    <!-- <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form> -->
+  </div>
+</nav>
+
+
+<h3 style="text-align: center; text-decoration: underline; ">Contact Form</h3>
+
+<div class="container">
+  <h1 id="msg"></h1>
+  <form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" placeholder="Your last name..">
+
+    <label for="email">Email ID</label>
+    <input type="text" id="email" name="email" placeholder="Your email id.."><br>
+
+    <label for="phone">Mobile No</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="Your mobile number.."><br><br>
+
+    <label for="city">City</label>
+    <select id="city" name="city">
+      <option value="none">None</option>
+      <option value="pune">Pune</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="nagpur">Nagpur</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" id="sub" value="Submit" style="background-color: darkred;">
+  </form>
+</div>
+
+
+<div class="footer">
+  
+
+  <address>
+    Written by <a href="abhiy.dhamdhere@gmail.com" style="color: white;">Abhishek Dhamdhere</a><br> 
+    Visit us at :
+    Example.com<br>
+    Mobile Number : 
+    +91 8805950492<br>
+    Shivajinagar, Pune<br>
+    INDIA
+</address>
+
+<a href="#" class="fa fa-facebook"></a>
+ <a href="#" class="fa fa-linkedin"></a>
+ <a href="#" class="fa fa-instagram"></a>
+ <a href="#" class="fa fa-youtube"></a>
+</div>
+
+<script>
+        let form = document.querySelector("form");
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            document.querySelector("#sub").value = "Submiting..";
+            let data = new FormData(form);
+            fetch('https://script.google.com/macros/s/AKfycbw3bGy_GU2LGGYnkfbeHWTmW9TU4i0-0QMoQMbOkY2Ymv-RYVBHEn9_Lyx0KWixBvZS/exec', {
+                    method: "POST",
+                    body: data
+                })
+                .then(res => res.text())
+                .then(data => {
+                    document.querySelector("#msg").innerHTML = data;
+                    document.querySelector("#sub").value = "Submit"
+                });
+        })
+</script>
+
+</body>
+</html>
+
+
